@@ -1,0 +1,568 @@
+:root{
+
+
+    /* color variables */
+--black:black;
+--brown:rgba(255, 184, 54, 0.816);
+--bodybc:rgba(14, 23, 86, 0.885);
+--silver:rgb(211, 206, 206);
+--blue:blue;
+--green:green;
+--white:white;
+--yellow:yellow;
+
+
+
+/* size variables */
+--width:290px;
+--height: 600px;
+--margin:25px;
+--padding:0px;
+--font_size:16px;
+--sheight:50px;
+
+
+
+}
+
+
+
+
+body{
+    width: 100%;
+    height: 100vh;
+    margin: var(--padding);
+    padding: var(--padding);
+    box-sizing: border-box;
+    background-color: var(--bodybc);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.container{
+width: var(--width);
+height: var(--height);
+background-color:var(--white);
+
+}
+
+.container h1{
+    text-align: center;
+    font-size:2.5rem ;
+    font-family: cursive;
+    height:var(--sheight);
+    margin: var(--padding);
+    /* padding: var(--margin); */
+    text-decoration: underline;
+    color: var(--blue);
+}
+.container h1 b{
+color: var(--brown);
+font-family: normal;
+}
+
+
+.phonecontainer{
+   width: 80%;
+   height: 85%;
+   margin: var(--margin) 10%;
+   background-color: var(--black);
+   border-radius: 40px 40px 60px 60px;
+    padding: 3px;
+}
+
+
+.screencontainer{
+    height: 70%;
+    width: 96.5%;
+background: var(--brown);
+border-radius: 40px 40px 70px 70px;
+padding: 5px;
+}
+
+
+.screensubcontainer{
+    height: 80%;
+    width: 100%;
+background: var(--black);
+border-radius: 40px 40px 70px 70px;
+
+}
+
+.sound{
+    width: 80%;
+    margin-left: 10%;
+    height: 10%;
+    background-color: var(--black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+
+}
+
+.sound button{
+    width: 20%;
+    background-color: var(--black);
+    border-radius: 10px;
+
+}
+
+.screen{
+    width: 80%;
+    height: 75%;
+    margin: 0px 10%;
+    background-color:var(--yellow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.logo{
+    width: 30%;
+    height: 15%;
+    margin-left: 35%;
+    position: relative;
+   
+}
+
+.j{
+    background: var(--silver);
+    width: 20%;
+    height: 70%;
+    margin: 10% 0px;
+    left: 25%;
+    position: absolute;
+    border-radius: 0px 0px 10px 0px;
+
+}
+
+
+.l{
+    background: var(--silver);
+    width: 20%;
+    height: 30%;
+    margin: 35% 0px;
+    left: 0%;
+    position: absolute;
+    border-radius: 0px 0px 0px 10px;
+}
+
+.x{
+    position: absolute;
+    width:17%;
+    height:90%;
+    background-color: var(--silver);
+    border-radius: 20%;
+    left:65% ;
+    top: 5%;
+    transform: rotateZ(-45deg);
+}
+
+
+.v{ 
+    position: absolute;
+    width:22%;
+    height:90%;
+    left:65% ;
+    top: 5%;
+    transform: rotateZ(45deg); 
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+
+
+.up{
+    position: absolute;
+    width: 80%;
+    height: 30%;
+    background-color:var(--silver);
+    border-radius: 4px;
+    transform: rotateZ(45deg);
+   top: -1%;
+}
+
+
+
+.down{
+    position: absolute;
+    width: 80%;
+    height: 30%;
+    background-color:var(--silver);
+    border-radius:4px;
+    transform: rotateZ(45deg);
+    top: 75%;
+}
+
+
+
+.firstrow{
+    width: 100%;
+    height: 25%;
+   
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+
+.frleftbuton{
+    height: 100%;
+    width: 25%;
+    border: 1px solid var(--black);
+    box-shadow: 2px 2px 6px 0px;
+    background-color: var(--brown); 
+    border-radius: 40px 60px 20px 100px ;
+}
+
+
+.frcenterbuton{
+    height: 90%;
+    width: 30%;
+  
+    border-radius: 10px; 
+    border: 1px solid var(--black);
+    box-shadow: 2px 2px 6px 0px;
+    background-color: var(--brown); 
+}
+
+.frrightbuton{
+    height: 100%;
+    width: 25%;
+   
+    border: 1px solid var(--black);
+    box-shadow: 2px 2px 6px 0px;
+    background-color: var(--brown); 
+    border-radius:  60px 40px 100px 20px ;
+}
+
+
+.buttons{
+    width: 100%;
+    height: 28%;
+    border-radius: 0px 0px 35% 35% ;
+    display: flex;
+    flex-direction: column;
+    justify-content:start;
+
+}
+
+.secondrow{
+
+width: 80%;
+height: 23%;
+
+margin-left: 10%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+
+}
+
+.srleftbutton{
+width: 25%;
+height: 80%;
+background: var(--brown);
+border-radius: 50%;
+transform: rotate(10deg);
+
+}
+
+
+.srcenterbutton{
+    width: 25%;
+    height: 80%;
+    background: var(--brown);
+    border-radius: 50%;
+  
+    }
+
+    .srrightbutton{
+        width: 25%;
+        height: 80%;
+        background: var(--brown);
+        border-radius: 50%;
+        transform: rotate(-10deg);
+        }
+
+
+
+
+.thirdrow{
+
+    width: 80%;
+    height: 23%;
+  
+    margin-left: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.trleftbutton{
+    width: 25%;
+    height: 80%;
+    background: var(--brown);
+    border-radius: 50%;
+    transform: rotate(10deg);
+    }
+    
+    
+    .trcenterbutton{
+        width: 25%;
+        height: 80%;
+        background: var(--brown);
+        border-radius: 50%;
+      
+        }
+    
+        .trrightbutton{
+            width: 25%;
+            height: 80%;
+            background: var(--brown);
+            border-radius: 50%;
+            transform: rotate(-10deg);
+            }
+    
+
+
+.lastrow{
+
+   
+width: 80%;
+height: 23%;
+
+margin-left: 10%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+
+.laleftbutton{
+    width: 25%;
+    height: 80%;
+    background: var(--brown);
+    border-radius: 50%;
+    transform: rotate(10deg);
+    }
+    
+    
+    .lacenterbutton{
+        width: 25%;
+        height: 80%;
+        background: var(--brown);
+        border-radius: 50%;
+      
+        }
+    
+        .larightbutton{
+            width: 25%;
+            height: 80%;
+            background: var(--brown);
+            border-radius: 50%;
+            transform: rotate(-10deg);
+            }
+    
+
+.fiverow{
+  
+width: 80%;
+height: 23%;
+
+margin-left: 10%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+border-radius: 0px 0px 25px 25px ;
+}
+
+
+
+.fvleftbutton{
+    width: 25%;
+    height: 80%;
+    background: var(--brown);
+    border-radius: 50%;
+    transform: rotate(10deg);
+    }
+    
+    
+    .fvcenterbutton{
+        width: 25%;
+        height: 80%;
+        background: var(--brown);
+        border-radius: 50%;
+      
+        }
+    
+        .fvrightbutton{
+            width: 25%;
+            height: 80%;
+            background: var(--brown);
+            border-radius: 50%;
+            transform: rotate(-10deg);
+            }
+    
+
+/* for the inner animation */
+
+
+
+
+.l1{
+    position: absolute;
+        width: 15px;
+        height: 35px;
+        background-color: var(--blue);
+        border-radius: 0px 0px 10px 0px;
+        animation: 8s 1 ease l;
+        left: 40%;
+    }
+    
+    
+    .j1{
+        position: absolute;
+        width: 15px ;
+        height: 15px;
+        background-color:var(--blue);
+        border-radius: 0px 0px 0px 10px;
+        left: 30%;
+        top: 51.2%;
+        animation: 8s 1 ease j;
+    
+    }
+    
+    
+    .bsckslash{
+        position: absolute;
+        width: 15px;
+        height: 40px;
+        background-color: var(--blue);
+       border-radius: 20%;
+    left:55% ;
+    top: 40%;
+    transform: rotateZ(-45deg);
+    }
+    
+   
+    .slash{
+        position: absolute;
+        width: 15px;
+        height: 40px;
+        
+       
+    left:55% ;
+    top: 40%;
+    transform: rotateZ(35deg); 
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    }
+    
+     
+    .up1{
+        position: absolute;
+        width: 100%;
+        height: 35%;
+        background-color:var(--green);
+        border-radius: 4px;
+        transform: rotateZ(45deg);
+       top: -8%;
+       animation: 6s 1 ease up;
+    }
+    
+    
+    
+    .down1{
+        position: absolute;
+        width: 100%;
+        height: 35%;
+        background-color:var(--green);
+        border-radius:4px;
+        transform: rotateZ(45deg);
+        top: 73%;
+        animation: 4s 1 ease down;
+    }
+    
+    
+    /* the animation part  */
+    
+    
+    
+    
+    
+    
+    @keyframes down{
+    0%{
+        top: -60vh;
+        
+    }
+    100%{
+        top:73% ;
+    }
+    
+    
+    }
+    
+    
+    @keyframes up{
+    0%{
+        top: -60vh;
+    }
+    
+        50%{
+            top: -60vh;
+        }
+        100%{
+            top:0px;
+        }
+        
+        
+        }
+    
+    
+    
+    
+    @keyframes l{
+        0%{
+    
+        background:var(--yellow);
+            
+        }
+    50%{
+        background: var(--yellow);
+    }
+    
+    65%{
+        background-color:var(--yellow);
+    }
+    
+        100%{
+    background-color: var(--blue);
+        }
+    }
+    
+    
+    @keyframes j{
+        0%{
+    
+        background: var(--yellow);
+            
+        }
+    70%{
+        background: var(--yellow);
+    }
+    
+        100%{
+    background-color: blue;
+        }
+    } 
