@@ -78,18 +78,17 @@ font-family: normal;
 .screencontainer{
     height: 70%;
     width: 96.5%;
-background: var(--brown);
-border-radius: 40px 40px 70px 70px;
-padding: 5px;
+    background: var(--brown);
+    border-radius: 40px 40px 70px 70px;
+    padding: 5px;
 }
 
 
 .screensubcontainer{
     height: 80%;
     width: 100%;
-background: var(--black);
-border-radius: 40px 40px 70px 70px;
-
+    background: var(--black);
+    border-radius: 40px 40px 70px 70px;
 }
 
 .sound{
@@ -119,6 +118,7 @@ border-radius: 40px 40px 70px 70px;
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
     position: relative;
 }
 
@@ -566,3 +566,10 @@ border-radius: 0px 0px 25px 25px ;
     background-color: blue;
         }
     } 
+
+    .center-numbers{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 600;
+    }
